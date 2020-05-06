@@ -1,0 +1,44 @@
+{
+  "name": "module-native-sv",
+  "version": "1.0.2",
+  "description": "react-native",
+  "main": "dist/react-native-sv.cjs.js",
+  "jsnext:main": "dist/react-native-sv.esm.js",
+  "module": "dist/react-native-sv.esm.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "prepublishOnly": "npm run build",
+    "build": "rollup -c",
+    "yalc": "npm run build && npm run prebuild"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/preset-env": "^7.3.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-module-resolver": "^3.1.3",
+    "lint-staged": "^8.1.0",
+    "npm-run-all": "^4.1.5",
+    "react": "^16.7.0",
+    "react-native": "^0.62.2",
+    "react-native-vector-icons": "^6.2.0",
+    "rollup": "^1.1.2",
+    "rollup-plugin-alias": "^1.5.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-includepaths": "^0.2.3",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-replace": "^2.1.0",
+    "rollup-plugin-sourcemaps": "^0.6.1",
+    "rollup-plugin-terser": "^4.0.4"
+  },
+  "keywords": [
+    "module-service-native"
+  ],
+  "author": "original",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
